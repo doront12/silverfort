@@ -55,7 +55,7 @@ export class DataStore {
             requests = requests.filter(requestTime => now - requestTime <= WINDOW_MS);
             requests.push(Date.now());
 
-            const val = data[key] ?? await handler.get(key);
+            const val = data[key]!== undefined ? data[key] : await handler.get(key);
             return val;
         }).then(async (val: any) => {
             res.status(200).json({ key, val });

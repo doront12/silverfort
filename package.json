@@ -5,7 +5,8 @@
   "main": "app.ts",
   "type": "module",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "npx tsx app.ts"
   },
   "author": "doron tabakman",
   "license": "ISC",
