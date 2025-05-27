@@ -14,5 +14,5 @@ body example {"key":"test","value":300}
 # get data
 GET 127.0.0.1:3000/get
  <br />
-body example {"key":"test}
+body example {"key":"test"}
 
