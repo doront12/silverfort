@@ -12,7 +12,7 @@ POST 127.0.0.1:3000/upsert
 body example {"key":"test","value":300}
 
 # get data
-POST 127.0.0.1:3000/get
+GET 127.0.0.1:3000/get
  <br />
 body example {"key":"test}
 
