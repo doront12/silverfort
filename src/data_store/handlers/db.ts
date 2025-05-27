@@ -5,10 +5,8 @@ import { DiskHandler } from "./disk";
 const DATA_PATH = './db.json';
 const mockHandler = new DiskHandler();
 export class DbHandler implements StrategyHandler {
-    async init(options: Record<string, any>): Promise<void> {
+    async init(): Promise<void> {
         // add db connection initialiazation.
-
-
 
     }
     async put(key: string, value: any): Promise<any> {

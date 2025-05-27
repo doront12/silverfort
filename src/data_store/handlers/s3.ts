@@ -4,7 +4,7 @@ import { DiskHandler } from "./disk";
 const DATA_PATH = './disk.json';
 const mockHandler = new DiskHandler();
 export class S3Handler implements StrategyHandler {
-    async init(options: Record<string, any>): Promise<void> {
+    async init(): Promise<void> {
         // add here aws sdk init
 
     }

@@ -23,13 +23,11 @@ export class DataStore {
         const strategy = process.env.STRATEGY || 'disk';
 
         this.handler = this.getStrategyHandler(strategy);
-        
-
 
     }
-   async init (){
-    await this.handler.init();
-   }
+    async init() {
+        await this.handler.init();
+    }
     async put(key: string, value: any): Promise<void> {
 
         const h = this.handler;
@@ -59,16 +57,10 @@ export class DataStore {
             requests = requests.filter(requestTime => now - requestTime <= WINDOW_MS);
             requests.push(Date.now());
 
-            const val = data[key]!== undefined ? data[key] : await handler.get(key);
+            const val = data[key] !== undefined ? data[key] : await handler.get(key);
             return val;
         }).then(async (val: any) => {
             res.status(200).json({ key, val });
-
-
-
-
-
-
 
         });
     }
