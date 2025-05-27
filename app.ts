@@ -4,6 +4,7 @@ import { StrategyType } from './src/data_store/types/const';
 const app = express()
 const port = 3000
 const dataStore = new DataStore();
+await dataStore.init();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.post('/upsert', async (req: any, res: any) => {

@@ -23,9 +23,13 @@ export class DataStore {
         const strategy = process.env.STRATEGY || 'disk';
 
         this.handler = this.getStrategyHandler(strategy);
+        
 
 
     }
+   async init (){
+    await this.handler.init();
+   }
     async put(key: string, value: any): Promise<void> {
 
         const h = this.handler;
