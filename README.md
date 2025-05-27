@@ -1,2 +1,16 @@
 # silverfort
 silverfort datastore manager
+
+# install
+run npm i
+# run app server
+npm start ( requires tsx installed)
+
+# upsert data
+POST 127.0.0.1:3000/upsert
+body example {"key":"test","value":300}
+
+# get data
+POST 127.0.0.1:3000/get
+body example {"key":"test}
+
