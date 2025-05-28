@@ -4,6 +4,11 @@ silverfort datastore manager
 # install
 run npm i
 # run app server
+edit configuration using .env file
+available options:
+HITS_THRESHOLD
+STRATEGY
+WINDOW_MS
 npm start ( requires tsx installed)
 
 # upsert data
