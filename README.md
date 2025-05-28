@@ -9,7 +9,7 @@ available options:<br>
 HITS_THRESHOLD<br>
 STRATEGY<br>
 WINDOW_MS<br>
-npm start ( requires tsx installed)
+<b>run :</b> npm start ( requires tsx installed)
 
 # upsert data
 POST 127.0.0.1:3000/upsert
